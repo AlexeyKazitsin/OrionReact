@@ -4,7 +4,6 @@ import React, {useEffect, useState} from "react";
 import AstronautCard from "./AstronautCard/AstronautCard";
 import {iAstronautsMock, requestTime} from "../../utils/consts";
 import {Astronaut} from "../../utils/types";
-import {FaSearch} from "react-icons/fa";
 
 import SexFilter from "../../components/SearchBar/SexFilter";
 

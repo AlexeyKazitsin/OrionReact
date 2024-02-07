@@ -1,6 +1,5 @@
 import "./Header.sass"
 import NavMenu from "./NavMenu/NavMenu";
-import logoImage from "/src/assets/logo.png"
 
 
 const Header = () => {
