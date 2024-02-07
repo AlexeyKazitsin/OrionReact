@@ -97,9 +97,8 @@ const AstronautPage = ({ selectedAstronaut, setSelectedAstronaut }: { selectedAs
                     <h2>Страна: {selectedAstronaut.country}</h2>
 
                     
-                    <br/>
+
                     <h2>Опыт работы:</h2>
-                    <br/>
                     <h3>{selectedAstronaut.experience}</h3>
 
                     <br />
