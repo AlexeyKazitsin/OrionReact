@@ -14,7 +14,7 @@ function App() {
     const [selectedAstronaut, setSelectedAstronaut] = useState<Astronaut | undefined>(undefined)
 
     return (
-        <BrowserRouter basename="/orion">
+        <BrowserRouter basename="/OrionReact">
 
             <div className="App">
 
