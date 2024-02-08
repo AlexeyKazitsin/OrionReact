@@ -85,7 +85,8 @@ const Breadcrumbs = () => {
                 <div className={"crumb"} key={crumb}>
 
                     <Link to={currentLink}>
-                        {is_draft ? "Новый полет" : "Полет №" + flight?.id}
+                        {is_draft ? "Новый полет" : flight?.mission_name}
+                        {/*{is_draft ? "Новый полет" : "Полет №" + flight?.id}*/}
                     </Link>
 
                     <FaChevronRight className={"chevron-icon"}/>

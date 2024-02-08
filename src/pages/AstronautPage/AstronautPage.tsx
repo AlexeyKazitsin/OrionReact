@@ -59,7 +59,7 @@ const AstronautPage = () => {
 
                     <br />
 
-                    <h2>Опыт: <h4>{astronaut.experience}</h4></h2>
+                    <h2>Опыт: <span>{astronaut.experience}</span></h2>
 
                     
 

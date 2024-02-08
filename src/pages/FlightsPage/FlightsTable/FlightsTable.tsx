@@ -60,24 +60,7 @@ const FlightsTable = () => {
         }
     ]
 
-    if (is_moderator) {
-        columns.push({
-            Header: "Действие",
-            accessor: "accept_button",
-            Cell: ({ cell }) => (
-                is_moderator && cell.row.values.status == 2 && <CustomButton bg={variables.green} onClick={(e) => acceptFlight(cell.row.values.id)}>Принять</CustomButton>
-            )
-        })
-
-        columns.push({
-            Header: "Действие",
-            accessor: "dismiss_button",
-            Cell: ({ cell }) => (
-                is_moderator && cell.row.values.status == 2 && <CustomButton bg={variables.red} onClick={(e) => dismissFlight(cell.row.values.id)}>Отклонить</CustomButton>
-            )
-        })
-    }
-
+    
     const acceptFlight = async (order_id) => {
 
         const formData = new FormData()

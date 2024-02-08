@@ -15,10 +15,7 @@ import {useAuth} from "./hooks/users/useAuth";
 import FlightConstructor from "./components/FlightConstructor/FlightConstructor";
 import FlightPage from "./pages/FlightPage/FlightPage";
 import FlightsPage from "./pages/FlightsPage/FlightsPage";
-import AstronautEditPage from "./pages/AstronautEditPage/AstronautEditPage";
-import AstronautAddPage from "./pages/AstronautAddPage/AstronautAddPage";
 import AstronautsList from "./pages/AstronautsPage/AstronautsList/AstronautsList";
-import AstronautsTableWrapper from "./pages/AstronautsPage/AstronautsTableWrapper/AstronautsTableWrapper";
 
 
 const TopPanelWrapper = () => {
@@ -65,13 +62,7 @@ function App() {
 
                                     <Route path="/astronauts-list" element={<AstronautsList />} />
 
-                                    <Route path="/astronauts-table" element={<AstronautsTableWrapper />} />
-
-                                    <Route path="/astronauts/add" element={<AstronautAddPage />} />
-
                                     <Route path="/astronauts/:id" element={<AstronautPage />} />
-
-                                    <Route path="/astronauts/:id/edit" element={<AstronautEditPage />} />
 
                                     <Route path="/profile" element={<ProfilePage />} />
 

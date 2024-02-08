@@ -74,7 +74,7 @@ const AstronautCard = ({ astronaut, refetch }: {astronaut:Astronaut}) => {
 
                 <div className="content-bottom">
 
-                    {!is_moderator &&
+                    {
                         <Link to={`/astronauts/${astronaut.id}`}>
                             <CustomButton bg={variables.primary}>
                                 Подробнее
@@ -90,15 +90,7 @@ const AstronautCard = ({ astronaut, refetch }: {astronaut:Astronaut}) => {
                         <CustomButton onClick={handleDeleteAstronautFromFlight} bg={variables.red}>Удалить</CustomButton>
                     }
 
-                    {is_authenticated && is_moderator && location.pathname.includes("astronauts-list") &&
-                        <Link to={`/astronauts/${astronaut.id}/edit`}>
-                            <CustomButton bg={variables.primary}>Редактировать</CustomButton>
-                        </Link>
-                    }
 
-                    {is_authenticated && is_moderator && location.pathname.includes("astronauts-list") &&
-                        <CustomButton onClick={handleDeleteAstronaut} bg={variables.red}>Удалить</CustomButton>
-                    }
                 </div>
 
             </div>

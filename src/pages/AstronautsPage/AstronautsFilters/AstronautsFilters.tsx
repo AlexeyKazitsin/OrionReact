@@ -10,7 +10,6 @@ import SexFilter from "../../../components/SearchBar/SexFilter";
 
 const AstronautsFilters = ({refetch}) => {
 
-    const {is_moderator} = useAuth()
 
     const {query, setQuery} = useAstronauts()
 
@@ -27,13 +26,6 @@ const AstronautsFilters = ({refetch}) => {
             <h2>Поиск астронавтов</h2>
 
             <div className="right-container" >
-
-                {is_moderator &&
-                    <LinkButton to="/astronauts/add" bg={variables.primary}>
-                        Добавить астронавта
-                    </LinkButton>
-                }
-
                 <form className="search-form" onSubmit={handleSubmit}>
                     <SexFilter sexquery={sexquery} setSexQuery={setSexQuery}/>
                     <SearchBar query={query} setQuery={setQuery} placeholder={"Поиск по имени..."} />
