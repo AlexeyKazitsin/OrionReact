@@ -41,7 +41,7 @@ const FlightsTable = () => {
             Cell: ({ value }) => { return STATUSES.find(status => status.id == value).name }
         },
         {
-            Header: "Пользователь",
+            Header: "Оператор",
             accessor: "owner",
             Cell: ({ value }) => { return value.name }
         },
