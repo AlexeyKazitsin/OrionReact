@@ -109,15 +109,15 @@ const AstronautEditPage = () => {
 
                 <div className="info-container">
 
-                    <CustomInput placeholder="Имя" defaultValue={astronaut.name} setValue={setName} />
+                    <CustomInput placeholder="Имя" flag='astronaut' defaultValue={astronaut.name} setValue={setName} />
 
-                    <CustomInput placeholder="Возраст" defaultValue={astronaut.age} setValue={setAge} />
+                    <CustomInput placeholder="Возраст" flag='astronaut' defaultValue={astronaut.age} setValue={setAge} />
 
-                    <CustomInput placeholder="Пол" defaultValue={astronaut.sex} setValue={setSex} />
+                    <CustomInput placeholder="Пол"  flag='astronaut' defaultValue={astronaut.sex} setValue={setSex} />
 
-                    <CustomInput placeholder="Страна" defaultValue={astronaut.country} setValue={setCountry} />
+                    <CustomInput placeholder="Страна" flag='astronaut' defaultValue={astronaut.country} setValue={setCountry} />
 
-                    <CustomTextarea placeholder="Опыт" defaultValue={astronaut.experience} setValue={setExperience} />
+                    <CustomTextarea placeholder="Опыт" flag='astronaut 'defaultValue={astronaut.experience} setValue={setExperience} />
 
                     {/*
                     <CustomTextarea placeholder="Возраст" value={astronaut.age} setValue={setAge} />

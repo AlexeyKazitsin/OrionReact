@@ -107,8 +107,8 @@ const FlightPage = () => {
 
                 <div className="inputs-container">
 
-                    <CustomInput placeholder="Название" defaultValue={flight.mission_name} setValue={setMissionName} disabled={!is_draft}  />
-                    <CustomTextarea placeholder="Цель" defaultValue={flight.objective} setValue={setObjective} disabled={!is_draft}  />
+                    <CustomInput placeholder="Название" flag='flight' defaultValue={flight.mission_name} setValue={setMissionName} disabled={!is_draft}  />
+                    <CustomTextarea placeholder="Цель" flag='flight' defaultValue={flight.objective} setValue={setObjective} disabled={!is_draft}  />
 
                 </div>
 

@@ -95,15 +95,15 @@ const AstronautAddPage = () => {
 
                 <div className="info-container">
 
-                    <CustomInput placeholder="Имя" defaultValue={name} setValue={setName} />
+                    <CustomInput placeholder="Имя" flag='astronaut' defaultValue={name} setValue={setName} />
 
-                    <CustomInput placeholder="Возраст" defaultValue={age} setValue={setAge} />
+                    <CustomInput placeholder="Возраст" flag='astronaut' defaultValue={age} setValue={setAge} />
 
-                    <CustomInput placeholder="Пол" defaultValue={sex} setValue={setSex} />
+                    <CustomInput placeholder="Пол" flag='astronaut' defaultValue={sex} setValue={setSex} />
 
-                    <CustomInput placeholder="Страна" defaultValue={country} setValue={setCountry} />
+                    <CustomInput placeholder="Страна" flag='astronaut' defaultValue={country} setValue={setCountry} />
 
-                    <CustomTextarea placeholder="Опыт" defaultValue={experience} setValue={setExperience} />
+                    <CustomTextarea placeholder="Опыт" flag='astronaut' defaultValue={experience} setValue={setExperience} />
                     
                     {/*
                     <CustomTextarea placeholder="Возраст" value={age} setValue={setAge} />
